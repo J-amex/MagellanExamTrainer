@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    height: 100vh;
+}
+
+.card {
+    background: #ffffff;
+    border: none;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background: #4e54c8;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #3b41b4;
+}
+
+a {
+    color: #4e54c8;
+}
+
+a:hover {
+    color: #3b41b4;
+}
