@@ -20,11 +20,11 @@
 
         <div class="col-lg-5 d-flex align-items-center justify-content-center ps-lg-5 flex-column">
             <!-- Title Above the Card -->
-            <h2 class="text-center fw-bold mb-4" style="color:white; font-size: 30px;">Magellan Solutions Training</h2>
+            <h2 class="text-center fw-bold mb-1" style="color:white; font-size: 30px;">Magellan Solutions Training</h2>
 
             <!-- Sign-In Card -->
             <div class="card p-4 shadow-lg rounded-4 w-100" style="max-width: 600px; background-color: #515455;">
-                <h3 class="text-center fw-bold pb-lg-4" style="color:white">Sign In</h3>
+                <h3 class="text-center fw-bold pb-lg-2" style="color:white">Sign In</h3>
                 
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
