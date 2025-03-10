@@ -32,7 +32,7 @@ Route::get('/login', function () {
 Route::post('/login', function (Request $request) {
     // Define hardcoded credentials
     $validUsername = 'admin';
-    $validPassword = 'password123';
+    $validPassword = '123';
 
     // Check if the credentials match
     if ($request->username === $validUsername && $request->password === $validPassword) {

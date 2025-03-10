@@ -1,6 +1,7 @@
 body {
-    background: linear-gradient(135deg, #0F4153, #327A8E);
+    background: linear-gradient(135deg, #000000, #327A8E);
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card {
