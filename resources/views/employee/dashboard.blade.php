@@ -14,7 +14,7 @@
     
     <div class="row">   
         
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="card p-4 shadow-lg rounded-4 w-75 mx-auto" style="background-color: #327A8E;">
                 <div class="text-center mb-3">
                     <img src="{{ asset('images/profile.png') }}" alt="Profile" class="img-fluid rounded-circle" style="width: 100px;">
@@ -31,7 +31,7 @@
         </div>
         
       
-        <div class="col-lg-8">
+        <div class="col-lg-9">
           
             <div class="card mb-3 p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
