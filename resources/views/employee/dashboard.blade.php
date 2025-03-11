@@ -15,7 +15,7 @@
     <div class="row">   
         <!-- Employee Profile Section -->
         <div class="col-lg-4">
-            <div class="card p-4 shadow-lg rounded-4" style="background-color: #1B5A7A;">
+            <div class="card p-4 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <div class="text-center mb-3">
                     <img src="{{ asset('images/profile.png') }}" alt="Profile" class="img-fluid rounded-circle" style="width: 100px;">
                 </div>
@@ -32,7 +32,7 @@
         <!-- Training Sections -->
         <div class="col-lg-8">
             <!-- Pending Trainings -->
-            <div class="card mb-3 p-3 shadow-lg rounded-4" style="background-color: #3A6F8F;">
+            <div class="card mb-3 p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
                 <table class="table table-primary table-striped text-white">
                     <thead>
@@ -52,7 +52,7 @@
                             <td>Data Privacy Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger">Start Training</button></td>
+                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Start Training</button></td>
                         </tr>
                         <tr>
                             <td>02/27/2025</td>
@@ -60,7 +60,7 @@
                             <td>Magellan Policies Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>20 mins</td>
-                            <td><button class="btn btn-danger">Resume</button></td>
+                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Resume</button></td>
                         </tr>
                         <tr>
                             <td>03/02/2025</td>
@@ -68,14 +68,14 @@
                             <td>Earthquake and Fire Safety</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger">Retake</button></td>
+                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Retake</button></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- Training History -->
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #3A6F8F;">
+            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Training History:</h4>
                 <table class="table table-primary table-striped text-white">
                     <thead>
