@@ -19,12 +19,11 @@
         </div>
 
         <div class="col-lg-5 d-flex align-items-center justify-content-center ps-lg-5 flex-column">
-            <!-- Title Above the Card -->
+    
             <h2 class="text-center fw-bold mb-1" style="color:white; font-size: 30px;">Magellan Solutions Training</h2>
 
-            <!-- Sign-In Card -->
             <div class="card p-4 shadow-lg rounded-4 w-100" style="max-width: 600px; background-color: #515455;">
-                <h3 class="text-center fw-bold pb-lg-2" style="color:white">Sign In</h3>
+                <h3 class="text-center fw-bold pb-lg-1" style="color:white">Sign In</h3>
                 
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
@@ -41,14 +40,17 @@
                             </button> 
                         </div>
                     </div>
-                    <button type="submit" class="btn w-100 py-2 mt-3 fw-bold" style="background-color: #740407; color:white;">Login</button>
+                    @if(session('error'))
+                            <p class="text-center fw-semibold mt-2" style="color:#701818; font-style: italic;">{{ session('error') }}</p>
+                        @endif
+                    <button type="submit" class="btn w-100 py-2 mt-3 fw-bold" style="background-color:#701818; color:white;">Login</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
-    <!-- Password Toggle Script -->
+  
     <script>
         document.getElementById('togglePassword').addEventListener('click', function () {
             let passwordField = document.getElementById('password');
