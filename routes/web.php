@@ -12,37 +12,18 @@
 // | be assigned to the "web" middleware group. Make something great!
 // |
 // */
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-
-
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
-
-Route::post('/login', function (Request $request) {
-    $adminUsername = 'admin';
-    $employeeUsername = 'employee';
-    $validPassword = '123';
-
-    if ($request->password === $validPassword) {
-        if ($request->username === $adminUsername) {
-            session(['logged_in' => true, 'user_type' => 'admin']);
-            return redirect()->route('admin.dashboard')->with('success', 'Welcome Admin!');
-        } elseif ($request->username === $employeeUsername) {
-            session(['logged_in' => true, 'user_type' => 'employee']);
-            return redirect()->route('employee.dashboard')->with('success', 'Welcome Employee!');
-        }
-    }
-
-    return redirect()->route('login')->with('error', 'These credentials do not match our records.');
-});
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
