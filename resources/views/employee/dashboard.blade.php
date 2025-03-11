@@ -13,15 +13,16 @@
     </div>
     
     <div class="row">   
-        <!-- Employee Profile Section -->
+        
         <div class="col-lg-4">
-            <div class="card p-4 shadow-lg rounded-4" style="background-color: #327A8E;">
+            <div class="card p-4 shadow-lg rounded-4 w-75 mx-auto" style="background-color: #327A8E;">
                 <div class="text-center mb-3">
                     <img src="{{ asset('images/profile.png') }}" alt="Profile" class="img-fluid rounded-circle" style="width: 100px;">
                 </div>
                 <h4 class="fw-bold text-center">Aron James Aguirre</h4>
-                <p class="text-center">Campaign Department</p>
-                <h5 class="fw-bold">Training Feedback</h5>
+                <p class="text-center">Campaign</p>
+                <p class="text-center pb-5">Department</p>
+                <h5 class="fw-bold pt-4">Training Feedback:</h5>
                 <p>Data Privacy Exam: ⭐⭐⭐⭐☆</p>
                 <p>Magellan Policies Exam: ⭐⭐⭐⭐☆</p>
                 <p>Earthquake and Fire Safety: ⭐⭐⭐⭐⭐</p>
@@ -29,9 +30,9 @@
             </div>
         </div>
         
-        <!-- Training Sections -->
+      
         <div class="col-lg-8">
-            <!-- Pending Trainings -->
+          
             <div class="card mb-3 p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
                 <table class="table table-primary table-striped text-white">
@@ -74,7 +75,7 @@
                 </table>
             </div>
 
-            <!-- Training History -->
+       
             <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Training History:</h4>
                 <table class="table table-primary table-striped text-white">
