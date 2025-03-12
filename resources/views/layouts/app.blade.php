@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <div class="container-fluid mt-5">
+    <div class="container-fluid vh-100">
         @yield('content')
     </div>
 </body>

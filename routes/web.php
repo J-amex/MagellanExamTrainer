@@ -35,7 +35,7 @@ Route::get('/employee/dashboard', function () {
 
 
 Route::get('/dashboard', function () {
-    if (!session('logged_in')) {
+     if (!session('logged_in')) {
         return redirect()->route('login')->with('error', 'You must log in first.');
     }
     return view('dashboard');
