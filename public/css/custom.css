@@ -32,3 +32,24 @@ a {
 a:hover {
     color: #3b41b4;
 }
+
+
+/* Applies to all scrollbars */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #05343d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #104652;
+  
+}
+
+::-webkit-scrollbar-track {
+    background: #79c9df;
+    border-radius: 10px;
+}

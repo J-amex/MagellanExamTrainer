@@ -51,7 +51,7 @@
           
             <div class="card mb-3 p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
-                <div class="px-2" style="overflow-y: auto; max-height: 350px;"> 
+                <div class="px-2" style="overflow-y: auto; max-height: 350px; min-height: 350px;"> 
                 <table class="table table-primary table-striped text-white">
                     <thead>
                         <tr>
