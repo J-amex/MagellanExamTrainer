@@ -5,7 +5,7 @@
 @section('content')
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0.0); min-height: 100vh; color: white;">
 
-    <!-- Logo Placeholder -->
+    
     <div class="d-flex justify-content-between align-items-center mb-3">
     <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
         <h2 class="fw-bold" style="color: white;">Magellan Solutions Training</h2>
@@ -51,7 +51,7 @@
           
             <div class="card mb-3 p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
-                <div class="px-2"> 
+                <div class="px-2" style="overflow-y: auto; max-height: 350px;"> 
                 <table class="table table-primary table-striped text-white">
                     <thead>
                         <tr>
@@ -64,6 +64,22 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>02/25/2025</td>
+                            <td>10:00 AM</td>
+                            <td>Data Privacy Exam</td>
+                            <td>Asdf Ghjk Lmnop</td>
+                            <td>15 mins</td>
+                            <td><button class="btn btn-success w-100 text-center fw-bold py-1">Start Training</button></td>
+                        </tr>
+                        <tr>
+                            <td>02/25/2025</td>
+                            <td>10:00 AM</td>
+                            <td>Data Privacy Exam</td>
+                            <td>Asdf Ghjk Lmnop</td>
+                            <td>15 mins</td>
+                            <td><button class="btn btn-success w-100 text-center fw-bold py-1">Start Training</button></td>
+                        </tr>
                         <tr>
                             <td>02/25/2025</td>
                             <td>10:00 AM</td>
@@ -120,7 +136,7 @@
        
             <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Training History:</h4>
-                <div class="px-2"> 
+                <div class="px-2" style="overflow-y: auto; max-height: 250px;"> 
                 <table class="table table-primary table-striped text-white">
                     <thead>
                         <tr>
@@ -133,6 +149,22 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>02/25/2025</td>
+                            <td>10:36 AM</td>
+                            <td>Data Privacy Exam</td>
+                            <td>Asdf Ghjk Lmnop</td>
+                            <td>00:16</td>
+                            <td>80/100</td>
+                        </tr>
+                        <tr>
+                            <td>02/25/2025</td>
+                            <td>10:36 AM</td>
+                            <td>Data Privacy Exam</td>
+                            <td>Asdf Ghjk Lmnop</td>
+                            <td>00:16</td>
+                            <td>80/100</td>
+                        </tr>
                         <tr>
                             <td>02/25/2025</td>
                             <td>10:36 AM</td>
