@@ -34,7 +34,7 @@ a:hover {
 }
 
 
-/* Applies to all scrollbars */
+
 ::-webkit-scrollbar {
     width: 9px;
 }

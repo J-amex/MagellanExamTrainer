@@ -9,7 +9,12 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
     <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
         <h2 class="fw-bold" style="color: white;">Magellan Solutions Training</h2>
-        <button class="btn btn-outline-light" >Logout</button>
+
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button class="btn btn-outline-light" >Logout</button>
+            </form>
+
     </div>
     
     <div class="row">   
