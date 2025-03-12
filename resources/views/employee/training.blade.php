@@ -17,13 +17,13 @@
         <div class="col-lg-10">
             <div class="card p-4 shadow-lg rounded-4 d-flex align-items-center" style="background-color: #327A8E;">
                 <div class="training-container d-flex justify-content-between align-items-center p-4">
-                    <div class="training-content p-3 rounded-4" style="border: 4px solid #64B5CD; background-color: #2C5B6E; width: 80%;">
-                        <img src="{{ asset('images/powerpoint-icon.png') }}" class="img-fluid w-100" alt="Training Slide">
+                    <div class="training-content p-3 rounded-4" style="border: 4px solid #64B5CD; background-color: #2C5B6E; width: 100%;">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSBj-Mwhwd1d4C6LPBTqj--7FdJN5HBnqiAOnzFXueWgWnTtcjCT8dUZcRuf588DTJv62WZGn4qyNV2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
                     </div>
-                    <div class="training-controls d-flex flex-column gap-3">
-                        <button class="btn btn-danger fw-bold py-2 px-4">Next</button>
-                        <button class="btn btn-danger fw-bold py-2 px-4">Back</button>
-                        <button class="btn btn-danger fw-bold py-2 px-4">Exit</button>
+                    <div class="training-controls d-flex flex-column gap-3 px-5">
+                        <button class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Proceed to Exam</button>
+                        <button class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Exit</button>
                     </div>
                 </div>
             </div>
