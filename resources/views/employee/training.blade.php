@@ -23,7 +23,10 @@
                     </div>
                     <div class="training-controls d-flex flex-column gap-3 px-5">
                         <button class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Proceed to Exam</button>
-                        <button class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Exit</button>
+                        <a href="{{ route('employee.dashboard') }}" class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">
+                            Exit
+                        </a>
+
                     </div>
                 </div>
             </div>

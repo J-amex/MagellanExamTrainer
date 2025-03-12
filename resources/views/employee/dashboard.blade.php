@@ -75,7 +75,13 @@
                             <td>Data Privacy Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-success w-100 text-center fw-bold py-1">Start Training</button></td>
+                            <td>
+                                <a href="{{ route('employee.training', ['category' => 'Data Privacy Exam']) }}" 
+                                class="btn btn-success w-100 text-center fw-bold py-1">
+                                    Start Training
+                                </a>
+                            </td>
+
                         </tr>
                         <tr>
                             <td>02/25/2025</td>
@@ -83,7 +89,13 @@
                             <td>Data Privacy Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-success w-100 text-center fw-bold py-1">Start Training</button></td>
+                            <td>
+                                <a href="{{ route('employee.training', ['category' => 'Data Privacy Exam']) }}" 
+                                class="btn btn-success w-100 text-center fw-bold py-1">
+                                    Start Training
+                                </a>
+                            </td>
+
                         </tr>
                         <tr>
                             <td>02/25/2025</td>
@@ -91,7 +103,13 @@
                             <td>Data Privacy Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-success w-100 text-center fw-bold py-1">Start Training</button></td>
+                            <td>
+                                <a href="{{ route('employee.training', ['category' => 'Data Privacy Exam']) }}" 
+                                class="btn btn-success w-100 text-center fw-bold py-1">
+                                    Start Training
+                                </a>
+                            </td>
+
                         </tr>
                         <tr>
                             <td>02/27/2025</td>
@@ -107,7 +125,7 @@
                             <td>Earthquake and Fire Safety</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Retake</button></td>
+                            <td><button class="btn w-100 text-center fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
                         </tr>
                         <tr>
                             <td>03/02/2025</td>
@@ -115,7 +133,7 @@
                             <td>Earthquake and Fire Safety</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Retake</button></td>
+                            <td><button class="btn w-100 text-center fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
                         </tr>
                         <tr>
                             <td>03/02/2025</td>
@@ -123,7 +141,7 @@
                             <td>Earthquake and Fire Safety</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Retake</button></td>
+                            <td><button class="btn w-100 text-center fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
                         </tr>
                         <tr>
                             <td>03/02/2025</td>
@@ -131,7 +149,7 @@
                             <td>Earthquake and Fire Safety</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Retake</button></td>
+                            <td><button class="btn w-100 text-center fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
                         </tr>
                     </tbody>
                 </table>

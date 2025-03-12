@@ -16,6 +16,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ButtonControllers;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,6 +25,7 @@ Route::get('/', function () {
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/employee/training', [ButtonControllers::class, 'startTraining'])->name('employee.training');
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
@@ -36,7 +38,6 @@ Route::get('/employee/dashboard', function () {
 Route::get('/employee/training', function () {
     return view('employee.training');
 })->name('employee.training');
-
 
 Route::get('/dashboard', function () {
      if (!session('logged_in')) {
