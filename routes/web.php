@@ -33,6 +33,10 @@ Route::get('/employee/dashboard', function () {
     return view('employee.dashboard');
 })->name('employee.dashboard');
 
+Route::get('/employee/training', function () {
+    return view('employee.training');
+})->name('employee.training');
+
 
 Route::get('/dashboard', function () {
      if (!session('logged_in')) {

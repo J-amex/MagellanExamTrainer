@@ -21,7 +21,7 @@
         
                 <div class="col-lg-3 d-flex">
                 <div class="card p-4 shadow-lg rounded-4 w-100 mx-4 d-flex flex-column justify-content-between" 
-                style="background-color: #327A8E; min-height: 700px;">
+                style="background-color: #327A8E; min-height: 700px; max-height: 800px;">
                 
                 
                 <div class="text-center mb-1">
