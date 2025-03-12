@@ -21,7 +21,7 @@
                 
                 <div class="text-center mb-1">
                     <img src="{{ asset('images/profile.png') }}" alt="Profile" 
-                        class="img-fluid rounded-circle" style="width: 150px;">
+                        class="img-fluid rounded-circle" style="width: 200px;">
                 </div>
 
                 
@@ -70,7 +70,7 @@
                             <td>Data Privacy Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>15 mins</td>
-                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Start Training</button></td>
+                            <td><button class="btn btn-success w-100 text-center fw-bold py-1">Start Training</button></td>
                         </tr>
                         <tr>
                             <td>02/27/2025</td>
@@ -78,7 +78,7 @@
                             <td>Magellan Policies Exam</td>
                             <td>Asdf Ghjk Lmnop</td>
                             <td>20 mins</td>
-                            <td><button class="btn btn-danger w-100 text-center fw-bold py-1">Resume</button></td>
+                            <td><button class="btn btn-warning w-100 text-center fw-bold py-1">Resume</button></td>
                         </tr>
                         <tr>
                             <td>03/02/2025</td>
