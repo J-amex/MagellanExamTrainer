@@ -21,7 +21,7 @@
                     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSBj-Mwhwd1d4C6LPBTqj--7FdJN5HBnqiAOnzFXueWgWnTtcjCT8dUZcRuf588DTJv62WZGn4qyNV2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
                     </div>
-                    <div class="training-controls d-flex flex-column gap-3 px-5">
+                    <div class="training-controls d-flex flex-column gap-4 px-5 w-100">
                         <button class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Proceed to Exam</button>
                         <a href="{{ route('employee.dashboard') }}" class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">
                             Exit
