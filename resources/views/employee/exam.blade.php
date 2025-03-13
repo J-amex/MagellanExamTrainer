@@ -44,7 +44,7 @@
 
                     <!-- Navigation Buttons -->
                     <div class="d-flex justify-content-between w-100 p-3">
-                        <button class="btn btn-secondary fw-bold px-4" id="prev-btn" disabled>Previous</button>
+                        <button class="btn btn-danger fw-bold px-4" id="prev-btn" disabled>Previous</button>
                         <button class="btn btn-danger fw-bold px-4" id="next-btn">Next</button>
                     </div>
 
