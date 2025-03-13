@@ -94,6 +94,38 @@
                                 <td>15 mins</td>
                                 <td><button class="btn w-100 fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
                             </tr>
+                            <tr>
+                                <td>03/02/2025</td>
+                                <td>3:00 AM</td>
+                                <td>Earthquake and Fire Safety</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>15 mins</td>
+                                <td><button class="btn w-100 fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
+                            </tr>
+                            <tr>
+                                <td>03/02/2025</td>
+                                <td>3:00 AM</td>
+                                <td>Earthquake and Fire Safety</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>15 mins</td>
+                                <td><button class="btn w-100 fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
+                            </tr>
+                            <tr>
+                                <td>03/02/2025</td>
+                                <td>3:00 AM</td>
+                                <td>Earthquake and Fire Safety</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>15 mins</td>
+                                <td><button class="btn w-100 fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
+                            </tr>
+                            <tr>
+                                <td>03/02/2025</td>
+                                <td>3:00 AM</td>
+                                <td>Earthquake and Fire Safety</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>15 mins</td>
+                                <td><button class="btn w-100 fw-bold py-1" style="background-color: #740407; color:white;">Retake</button></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -129,6 +161,46 @@
                                 <td>Asdf Ghjk Lmnop</td>
                                 <td>00:19</td>
                                 <td>95/100</td>
+                            </tr>
+                            <tr>
+                                <td>02/27/2025</td>
+                                <td>10:36 AM</td>
+                                <td>Magellan Policies Exam</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>00:19</td>
+                                <td class="text-danger">40/100</td>
+                            </tr>
+                            <tr>
+                                <td>02/27/2025</td>
+                                <td>10:36 AM</td>
+                                <td>Magellan Policies Exam</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>00:19</td>
+                                <td class="text-danger">40/100</td>
+                            </tr>
+                            <tr>
+                                <td>02/27/2025</td>
+                                <td>10:36 AM</td>
+                                <td>Magellan Policies Exam</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>00:19</td>
+                                <td class="text-danger">40/100</td>
+                            </tr>
+                            <tr>
+                                <td>02/27/2025</td>
+                                <td>10:36 AM</td>
+                                <td>Magellan Policies Exam</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>00:19</td>
+                                <td class="text-danger">40/100</td>
+                            </tr>
+                            <tr>
+                                <td>02/27/2025</td>
+                                <td>10:36 AM</td>
+                                <td>Magellan Policies Exam</td>
+                                <td>Asdf Ghjk Lmnop</td>
+                                <td>00:19</td>
+                                <td class="text-danger">40/100</td>
                             </tr>
                             <tr>
                                 <td>02/27/2025</td>
