@@ -46,5 +46,5 @@
 @endsection
 
 @section('scripts')
-<script src="{{ asset('js/exam.js') }}" defer></script>
+
 @endsection

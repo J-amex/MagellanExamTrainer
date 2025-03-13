@@ -22,7 +22,8 @@
 
                     </div>
                     <div class="training-controls d-flex flex-column gap-4 px-5 w-100">
-                        <button class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Proceed to Exam</button>
+                    <a href="{{ route('employee.exam', ['category' => 'Data Privacy Exam']) }}" 
+                     class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">Proceed to Exam</a>
                         <a href="{{ route('employee.dashboard') }}" class="btn fw-bold py-1 px-5" style="background-color: #740407; color:white;">
                             Exit
                         </a>
