@@ -24,7 +24,7 @@
                             <input type="radio" name="q1" value="C"> Choice C <br>
                             <input type="radio" name="q1" value="D"> Choice D <br>
                         </div>
-
+                        
                         <div class="question-div d-none" id="question-2">
                             <p class="fw-bold">Question 2: Another question appears here...</p>
                             <input type="radio" name="q2" value="A"> Choice A <br>
