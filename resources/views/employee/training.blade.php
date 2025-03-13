@@ -3,6 +3,9 @@
 @section('title', 'Training Session')
 
 @section('content')
+
+<!-- ALISIN SA views/employee , pag may backend na. pang any users tong training.php (dont forget to fix routes) -->
+
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
