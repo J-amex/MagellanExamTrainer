@@ -15,14 +15,9 @@
 
     <div class="row">
         <!-- Sidebar Navigation -->
-        <div class="col-lg-3 d-flex">
+        <div class="col-lg-2 d-flex">
             <div class="card p-4 shadow-lg rounded-4 w-100 d-flex flex-column justify-content-between"
-                 style="background-color: #0A1931; min-height: 700px; max-height: 800px;">
-                 
-                <div class="text-center mb-4">
-                    <img src="{{ asset('images/magellan logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 100px;">
-                </div>
-
+                 style="background-color: #110C3D; min-height: 700px; max-height: 800px;">
                 <!-- Navigation Links -->
                 <nav class="nav flex-column">
                     <a href="{{ route('admin.dashboard') }}" class="nav-link text-white fw-bold p-3" style="background-color: #146C94; border-radius: 10px;">
@@ -45,18 +40,17 @@
                         <i class="bi bi-gear"></i> Settings
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
-    @csrf
-    <button type="submit" class="nav-link text-white fw-bold p-3 border-0 bg-transparent">
-        <i class="bi bi-box-arrow-right"></i> Logout
-    </button>
-</form>
-
+                        @csrf
+                        <button type="submit" class="nav-link text-white fw-bold p-3 border-0 bg-transparent">
+                            <i class="bi bi-box-arrow-right"></i> Logout
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
 
         <!-- Main Content -->
-        <div class="col-lg-9">
+        <div class="col-lg-7">
             <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
                 <div class="px-2" style="overflow-y: auto; max-height: 350px; min-height: 350px;">
@@ -150,6 +144,12 @@
             </div>
         </div>
 
+        <!-- Additional Card (Blank) -->
+        <div class="col-lg-3">
+            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; height: 100%;">
+                <h4 class="fw-bold">Wala pa dito</h4>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

@@ -3,6 +3,8 @@
 @section('title', 'Exam')
 
 @section('content')
+
+<!-- ALISIN SA views/employee , pag may backend na. pang any users tong exam.php (dont forget to fix routes) -->
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">
     <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -24,7 +26,7 @@
                             <input type="radio" name="q1" value="C"> Choice C <br>
                             <input type="radio" name="q1" value="D"> Choice D <br>
                         </div>
-                        
+
                         <div class="question-div d-none" id="question-2">
                             <p class="fw-bold">Question 2: Another question appears here...</p>
                             <input type="radio" name="q2" value="A"> Choice A <br>
