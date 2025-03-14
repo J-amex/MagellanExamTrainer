@@ -30,7 +30,7 @@ Route::get('/employee/training', [ButtonControllers::class, 'startTraining'])->n
 Route::post('/exam/next', [ExamController::class, 'nextQuestion'])->name('exam.next');
 
 
-
+//admin routes
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
@@ -39,6 +39,15 @@ Route::get('/admin/createExam', function () {
     return view('admin.createExam');
 })->name('admin.createExam');
 
+Route::get('/admin/agents', function () {
+    return view('admin.agents');
+})->name('admin.agents');
+
+Route::get('/admin/examArchive', function () {
+    return view('admin.examArchive');
+})->name('admin.examArchive');
+
+//employee routes
 Route::get('/employee/dashboard', function () {
     return view('employee.dashboard');
 })->name('employee.dashboard');
@@ -51,6 +60,8 @@ Route::get('/employee/exam', function () {
     return view('employee.exam');
 })->name('employee.exam');
 
+
+//extra wtf
 Route::get('/dashboard', function () {
      if (!session('logged_in')) {
         return redirect()->route('login')->with('error', 'You must log in first.');

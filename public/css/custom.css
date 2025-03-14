@@ -53,3 +53,9 @@ a:hover {
     background: #79c9df;
     border-radius: 10px;
 }
+
+
+.active-link {
+    background-color: #146C94 !important;
+    border-radius: 10px;
+}
