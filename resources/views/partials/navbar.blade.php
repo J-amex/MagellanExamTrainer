@@ -1,7 +1,7 @@
 
     <div class="card p-4 shadow-lg rounded-4 w-100 d-flex flex-column justify-content-between"
          style="background-color: #110C3D; min-height: 700px; max-height: 800px;">
-        <!-- Navigation Links -->
+       
         <nav class="nav flex-column">
             <a href="{{ route('admin.dashboard') }}" 
             class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.dashboard') ? 'active-link' : '' }}">
