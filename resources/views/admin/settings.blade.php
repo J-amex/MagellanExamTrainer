@@ -14,12 +14,12 @@
     </div>
 
     <div class="row">
-        <!-- Sidebar Navigation -->
+        
         <div class="col-lg-2 d-flex">
         @include('partials.navbar')
         </div>
 
-        <!-- Main Content -->
+        
         <div class="col-lg-9">
             <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Settings</h4>
