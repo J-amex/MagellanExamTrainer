@@ -18,7 +18,9 @@
 
 </head>
 <body>
+    
     <div class="container-fluid vh-100">
+ 
         @yield('content')
     </div>
     <script src="{{ asset('js/exam.js') }}" defer></script>
