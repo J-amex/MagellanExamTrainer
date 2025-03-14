@@ -23,7 +23,7 @@
                     <a href="{{ route('admin.dashboard') }}" class="nav-link text-white fw-bold p-3" style="background-color: #146C94; border-radius: 10px;">
                         <i class="bi bi-house-door"></i> Dashboard
                     </a>
-                    <a href="{{ route('admin.dashboard') }}" class="nav-link text-white fw-bold p-3">
+                    <a href="{{ route('admin.createExam') }}" class="nav-link text-white fw-bold p-3">
                         <i class="bi bi-pencil-square"></i> Create Exam
                     </a>
                     <a href="{{ route('admin.dashboard') }}" class="nav-link text-white fw-bold p-3">
