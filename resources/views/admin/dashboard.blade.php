@@ -16,7 +16,7 @@
     <div class="row">
         <!-- Sidebar Navigation -->
         <div class="col-lg-2 d-flex">
-        @include('partials.navbar')
+             @include('partials.navbar')
         </div>
 
         <!-- Main Content -->
