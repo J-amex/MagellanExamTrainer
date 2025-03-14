@@ -30,10 +30,10 @@
 
 
         <div class="mt-auto">
-            <hr class="bg-white">
-            <a href="{{ route('admin.dashboard') }}" class="nav-link text-white fw-bold p-3">
-                <img src="{{ asset('images/icn settings.png') }}" alt="Settings" width="30" height="30" class="me-2">
-                Settings
+            <a href="{{ route('admin.settings') }}" 
+            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.settings') ? 'active-link' : '' }}">
+                    <img src="{{ asset('images/icn settings.png') }}" alt="Settings" width="30" height="30" class="me-2">
+                    Settings
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
                 @csrf
