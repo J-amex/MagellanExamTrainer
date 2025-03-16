@@ -20,7 +20,7 @@
         </div>
 
         <!-- Main Content -->
-        <div class="col-lg-9">
+        <div class="col-lg-10">
             <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
                 <h4 class="fw-bold">Exam Archive</h4>
                 <div class="px-2 w-100" style="max-height: 600px; min-height: 700px;">

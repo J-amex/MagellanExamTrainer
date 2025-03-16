@@ -3,7 +3,7 @@
 @section('title', 'Admin Create Exam')
 
 @section('content')
-<div class="container-fluid p-4" style="background-color: #0B3954; min-height: 100vh; color: white;">
+<div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
         <h2 class="fw-bold">Magellan Solutions Training</h2>
@@ -19,9 +19,8 @@
             @include('partials.navbar')
         </div>
 
-        
         <div class="col-lg-10">
-            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0;">
+            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0; max-height: 600px; min-height: 750px;">
                 <div class="row">
                     
                     <div class="col-md-6">
