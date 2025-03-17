@@ -21,7 +21,7 @@
 
        
         <div class="col-lg-10">
-            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0; min-height:750px; max-height:750px;">
+            <div class="card shadow-lg rounded-4 p-4" style="background-color: #327A8E; min-height:750px; max-height:750px;">
                 <h4 class="fw-bold">Agents</h4>
 
                 <div class="col-lg-7 d-flex gap-2 mb-3">
@@ -39,7 +39,7 @@
 
                 
                 <div class="table-responsive">
-                    <table class="table table-borderless text-center">
+                    <table class="table table-primary table-striped text-white">
                         <thead>
                             <tr class="fw-bold">
                                 <th>Agent Name ⬍</th>
@@ -189,7 +189,7 @@
                 </div>
 
                 <div class="text-end mt-3">
-                    <button class="btn btn-lg fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
+                    <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
                 </div>
 
             </div>
