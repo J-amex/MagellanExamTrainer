@@ -177,5 +177,19 @@
         </div>
     </div>
 </div>
+<script>
+       document.getElementById("selectAll").addEventListener("change", function () {
+        let checkboxes = document.querySelectorAll(".rowCheckbox");
+        checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+    });
 
+
+    document.querySelectorAll(".rowCheckbox").forEach(checkbox => {
+        checkbox.addEventListener("change", function () {
+            let selectAll = document.getElementById("selectAll");
+            let allChecked = document.querySelectorAll(".rowCheckbox:checked").length === document.querySelectorAll(".rowCheckbox").length;
+            selectAll.checked = allChecked;
+        });
+    });
+</script>
 @endsection
