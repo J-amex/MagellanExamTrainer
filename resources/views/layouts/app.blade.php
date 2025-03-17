@@ -24,6 +24,7 @@
         @yield('content')
     </div>
     <script src="{{ asset('js/exam.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     @yield('scripts')
 </body>
 </html>

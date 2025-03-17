@@ -40,7 +40,7 @@
 
                 
                 <div class="table-responsive">
-                    <table class="table table-primary table-striped text-white">
+                    <table id="agentsTable" class="table table-primary table-striped text-white">
                     
                         <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr class="fw-bold">
@@ -177,7 +177,7 @@
                         <div id="paginationControls"></div>
                         
                         <div class="text-end mt-3">
-                            <button class="btn btn-outline-dark">⬇ Export</button>
+                            <button id="exportBtn"class="btn btn-outline-dark">⬇ Export</button>
                             <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
                         </div>
                     </div>
@@ -266,6 +266,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
    
     showPage(1);
+});
+
+document.getElementById("exportBtn").addEventListener("click", function () {
+    let table = document.getElementById("agentsTable");
+    let rows = Array.from(document.querySelectorAll("#agentsTableBody tr"));
+    let data = [];
+
+    let headers = Array.from(table.querySelectorAll("thead th"))
+        .slice(0, -1) 
+        .map(th => th.textContent.replace("⬍", "").trim()); 
+
+    data.push(headers);
+
+    rows.forEach(row => {
+        let rowData = Array.from(row.querySelectorAll("td"))
+            .slice(0, -1) 
+            .map(td => td.textContent.trim());
+        data.push(rowData);
+    });
+
+    let ws = XLSX.utils.aoa_to_sheet(data);
+    let wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Exam Results");
+
+    
+    XLSX.writeFile(wb, "exam_results.xlsx");
 });
 </script>
 
