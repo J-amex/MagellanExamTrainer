@@ -47,6 +47,10 @@ Route::get('/admin/examArchive', function () {
     return view('admin.examArchive');
 })->name('admin.examArchive');
 
+Route::get('/admin/giveExam', function () {
+    return view('admin.giveExam');
+})->name('admin.giveExam');
+
 Route::get('/admin/settings', function () {
     return view('admin.settings');
 })->name('admin.settings');
