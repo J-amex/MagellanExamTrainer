@@ -48,7 +48,7 @@
                                 <th>Agent Name ⬍</th>
                                 <th>Campaign ⬍</th>
                                 <th>Department ⬍</th>
-                                <th>Exam Title</th>
+                                <th>Exam Title ⬍</th>
                                 <th>Scores</th>
                                 <th>Status ⬍</th>
                                 <th>View</th>
