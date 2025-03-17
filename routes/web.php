@@ -68,7 +68,6 @@ Route::get('/employee/exam', function () {
     return view('employee.exam');
 })->name('employee.exam');
 
-
 //extra wtf
 Route::get('/dashboard', function () {
      if (!session('logged_in')) {

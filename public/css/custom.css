@@ -59,3 +59,9 @@ a:hover {
     background-color: #146C94 !important;
     border-radius: 10px;
 }
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
