@@ -14,23 +14,186 @@
     </div>
 
     <div class="row">
-        <!-- Sidebar Navigation -->
+        
         <div class="col-lg-2 d-flex">
         @include('partials.navbar')
         </div>
 
-        <!-- Main Content -->
+       
         <div class="col-lg-10">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
+            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0; min-height:750px; max-height:750px;">
                 <h4 class="fw-bold">Agents</h4>
-                <div class="px-2 w-100" style="max-height: 600px; min-height: 700px;">
-                    
+
+                <div class="col-lg-7 d-flex gap-2 mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <select class="form-control">
+                        <option>Select Campaign</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Select Department</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Select Exam Title</option>
+                    </select>
                 </div>
+
+                
+                <div class="table-responsive">
+                    <table class="table table-borderless text-center">
+                        <thead>
+                            <tr class="fw-bold">
+                                <th>Agent Name ⬍</th>
+                                <th>Campaign ⬍</th>
+                                <th>Department ⬍</th>
+                                <th>Exam Title</th>
+                                <th>Scores</th>
+                                <th>Status ⬍</th>
+                                <th>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Cooper</td>
+                                <td>Kodak</td>
+                                <td>IT NOC</td>
+                                <td>Data Privacy Exam</td>
+                                <td>6/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Floyd Miles</td>
+                                <td>Kodak</td>
+                                <td>IT NOC</td>
+                                <td>Data Privacy Exam</td>
+                                <td>9/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>👁</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+               
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p>Showing 1 to 8 of 256K entries</p>
+                    <div>
+                        <button class="btn btn-outline-dark">&lt;</button>
+                        <button class="btn btn-dark">1</button>
+                        <button class="btn btn-outline-dark">2</button>
+                        <button class="btn btn-outline-dark">3</button>
+                        <button class="btn btn-outline-dark">...</button>
+                        <button class="btn btn-outline-dark">40</button>
+                        <button class="btn btn-outline-dark">&gt;</button>
+                    </div>
+                    <button class="btn btn-outline-dark">⬇ Export</button>
+                </div>
+
+                <div class="text-end mt-3">
+                    <button class="btn btn-lg fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
+                </div>
+
             </div>
-
-            
-
-        
+        </div>
     </div>
 </div>
 @endsection
