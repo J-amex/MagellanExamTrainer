@@ -170,21 +170,18 @@
                 </div>
 
                
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                    <p>Showing 1 to 8 of 256K entries</p>
-                    <div>
-                        <button class="btn btn-outline-dark">&lt;</button>
-                        <button class="btn btn-dark">1</button>
-                        <button class="btn btn-outline-dark">2</button>
-                        <button class="btn btn-outline-dark">3</button>
-                        <button class="btn btn-outline-dark">...</button>
-                        <button class="btn btn-outline-dark">40</button>
-                        <button class="btn btn-outline-dark">&gt;</button>
+               
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <p>Showing <span id="showingStart">1</span> to <span id="showingEnd">10</span> of <span id="totalEntries">1*</span> entries</p>
+                        
+                        <div id="paginationControls"></div>
+                        
+                        <div class="text-end mt-3">
+                            <button class="btn btn-outline-dark">⬇ Export</button>
+                            <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
+                        </div>
                     </div>
-                    <div class="text-end mt-3">
-                <button class="btn btn-outline-dark">⬇ Export</button>
-                <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
-                </div>
+
                     
                 </div>
 
@@ -195,7 +192,7 @@
     </div>
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
     let tableRows = Array.from(document.querySelectorAll("#agentsTableBody tr")); 
 
     document.getElementById("searchInput").addEventListener("keyup", function () {
@@ -223,6 +220,52 @@ document.addEventListener("DOMContentLoaded", function () {
             row.style.display = matchesSearch && matchesDate ? "table-row" : "none";
         });
     }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let tableRows = Array.from(document.querySelectorAll("#agentsTableBody tr")); 
+    let rowsPerPage = 10;
+    let currentPage = 1;
+
+    function showPage(page) {
+        let start = (page - 1) * rowsPerPage;
+        let end = start + rowsPerPage;
+
+        tableRows.forEach((row, index) => {
+            row.style.display = index >= start && index < end ? "table-row" : "none";
+        });
+
+        updatePaginationControls();
+    }
+
+    function updatePaginationControls() {
+        let totalPages = Math.ceil(tableRows.length / rowsPerPage);
+        let paginationContainer = document.getElementById("paginationControls");
+
+        paginationContainer.innerHTML = `
+            <button class="btn btn-outline-dark" ${currentPage === 1 ? "disabled" : ""} onclick="changePage(currentPage - 1)">&lt;</button>
+        `;
+
+        for (let i = 1; i <= totalPages; i++) {
+            paginationContainer.innerHTML += `
+                <button class="btn ${i === currentPage ? "btn-dark" : "btn-outline-dark"}" onclick="changePage(${i})">${i}</button>
+            `;
+        }
+
+        paginationContainer.innerHTML += `
+            <button class="btn btn-outline-dark" ${currentPage === totalPages ? "disabled" : ""} onclick="changePage(currentPage + 1)">&gt;</button>
+        `;
+    }
+
+    window.changePage = function (page) {
+        if (page >= 1 && page <= Math.ceil(tableRows.length / rowsPerPage)) {
+            currentPage = page;
+            showPage(currentPage);
+        }
+    };
+
+   
+    showPage(1);
 });
 </script>
 
