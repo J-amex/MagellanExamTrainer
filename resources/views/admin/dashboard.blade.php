@@ -188,7 +188,7 @@
 
         <!-- Additional Card (Blank) -->
         <div class="col-lg-3">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height:750px; max-height: 750px;>
+            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height:750px; max-height: 750px;">
                 <h4 class="fw-bold">Wala pa dito</h4>
             </div>
         </div>
