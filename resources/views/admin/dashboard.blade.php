@@ -25,7 +25,7 @@
                 <h4 class="fw-bold">Pending Trainings:</h4>
                 <div class="px-2 flex-grow-1 overflow-auto">
                     <table class="table table-primary table-striped text-white">
-                        <thead>
+                        <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr>
                                 <th>Date</th>
                                 <th>Time Given</th>
@@ -105,7 +105,7 @@
                 <h4 class="fw-bold">Training History:</h4>
                 <div class="px-2 flex-grow-1 overflow-auto">
                     <table class="table table-primary table-striped text-white">
-                        <thead>
+                        <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr>
                                 <th>Date</th>
                                 <th>Time Finished</th>

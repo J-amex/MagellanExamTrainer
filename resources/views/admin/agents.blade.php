@@ -22,7 +22,7 @@
        
         <div class="col-lg-10">
             <div class="card shadow-lg rounded-4 p-4" style="background-color: #327A8E; min-height:750px; max-height:750px;">
-                <h4 class="fw-bold">Agents</h4>
+                <h4 class="fw-bold">Agents</h4><p>List of agents taking the exam</p>
 
                 <div class="col-lg-7 d-flex gap-2 mb-3">
                     <input type="text" class="form-control" placeholder="Search">
@@ -40,7 +40,7 @@
                 
                 <div class="table-responsive">
                     <table class="table table-primary table-striped text-white">
-                        <thead>
+                        <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr class="fw-bold">
                                 <th>Agent Name ⬍</th>
                                 <th>Campaign ⬍</th>
@@ -59,7 +59,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>6/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Floyd Miles</td>
@@ -68,7 +68,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>9/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -77,7 +77,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -86,7 +86,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -95,7 +95,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -104,7 +104,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -113,7 +113,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -122,7 +122,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -131,7 +131,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -140,7 +140,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -149,25 +149,7 @@
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
-                                <td>👁</td>
-                            </tr>
-                            <tr>
-                                <td>Ronald Richards</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
-                                <td>Data Privacy Exam</td>
-                                <td>7/10</td>
-                                <td>Passed</td>
-                                <td>👁</td>
-                            </tr>
-                            <tr>
-                                <td>Ronald Richards</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
-                                <td>Data Privacy Exam</td>
-                                <td>7/10</td>
-                                <td>Passed</td>
-                                <td>👁</td>
+                                <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -185,11 +167,12 @@
                         <button class="btn btn-outline-dark">40</button>
                         <button class="btn btn-outline-dark">&gt;</button>
                     </div>
-                    <button class="btn btn-outline-dark">⬇ Export</button>
+                    
                 </div>
 
                 <div class="text-end mt-3">
-                    <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
+                <button class="btn btn-outline-dark">⬇ Export</button>
+                <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
                 </div>
 
             </div>
