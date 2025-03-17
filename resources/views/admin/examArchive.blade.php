@@ -27,15 +27,11 @@
                 <div class="col-lg-7 d-flex gap-2 mb-3">
                     <input type="text" id="searchInput" class="form-control" placeholder="Search">
                     <select class="form-control">
-                        <option>Select Campaign</option>
-                    </select>
-                    <select class="form-control">
-                        <option>Select Department</option>
+                        <option>Select Examiner</option>
                     </select>
                     <select class="form-control">
                         <option>Select Exam Title</option>
                     </select>
-                    <input type="date" id="dateFilter" class="form-control">
                 </div>
 
                 
