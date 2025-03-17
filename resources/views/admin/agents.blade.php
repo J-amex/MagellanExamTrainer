@@ -25,7 +25,7 @@
                 <h4 class="fw-bold">Agents</h4><p>List of agents taking the exam</p>
 
                 <div class="col-lg-7 d-flex gap-2 mb-3">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search">
                     <select class="form-control">
                         <option>Select Campaign</option>
                     </select>
@@ -35,13 +35,16 @@
                     <select class="form-control">
                         <option>Select Exam Title</option>
                     </select>
+                    <input type="date" id="dateFilter" class="form-control">
                 </div>
 
                 
                 <div class="table-responsive">
                     <table class="table table-primary table-striped text-white">
+                    
                         <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr class="fw-bold">
+                                <th>Exam Date ⬍</th>
                                 <th>Agent Name ⬍</th>
                                 <th>Campaign ⬍</th>
                                 <th>Department ⬍</th>
@@ -51,8 +54,9 @@
                                 <th>View</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="agentsTableBody">
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Jane Cooper</td>
                                 <td>Kodak</td>
                                 <td>IT NOC</td>
@@ -62,6 +66,7 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Floyd Miles</td>
                                 <td>Kodak</td>
                                 <td>IT NOC</td>
@@ -71,6 +76,7 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Ronald Richards</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -80,6 +86,7 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Ronald Richards</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -89,6 +96,7 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Ronald Richards</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -98,6 +106,7 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Ronald Richards</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -107,6 +116,7 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>03-17-2025</td>
                                 <td>Ronald Richards</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -116,36 +126,40 @@
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
-                                <td>Ronald Richards</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
+                                <td>03-17-2025</td>
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
-                                <td>Ronald Richards</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
+                                <td>03-17-2025</td>
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
-                                <td>Ronald Richards</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
+                                <td>03-17-2025</td>
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
-                                <td>Ronald Richards</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
+                                <td>03-17-2025</td>
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
                                 <td>Passed</td>
@@ -167,16 +181,49 @@
                         <button class="btn btn-outline-dark">40</button>
                         <button class="btn btn-outline-dark">&gt;</button>
                     </div>
-                    
-                </div>
-
-                <div class="text-end mt-3">
+                    <div class="text-end mt-3">
                 <button class="btn btn-outline-dark">⬇ Export</button>
                 <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
                 </div>
+                    
+                </div>
+
+                
 
             </div>
         </div>
     </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let tableRows = Array.from(document.querySelectorAll("#agentsTableBody tr")); 
+
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        filterTable();
+    });
+
+    document.getElementById("dateFilter").addEventListener("change", function () {
+        filterTable();
+    });
+
+    function filterTable() {
+        let searchValue = document.getElementById("searchInput").value.toLowerCase();
+        let selectedDate = document.getElementById("dateFilter").value;
+
+        let formattedDate = selectedDate ? selectedDate.split("-").slice(1).join("-") + "-" + selectedDate.split("-")[0] : "";
+
+        tableRows.forEach(row => {
+            let textContent = row.textContent.toLowerCase();
+            let examDate = row.cells[0].textContent.trim(); 
+
+            let matchesSearch = textContent.includes(searchValue) || searchValue === "";
+            let matchesDate = examDate === formattedDate || formattedDate === "";
+
+            
+            row.style.display = matchesSearch && matchesDate ? "table-row" : "none";
+        });
+    }
+});
+</script>
+
 @endsection
