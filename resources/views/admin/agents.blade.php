@@ -177,7 +177,7 @@
                         <div id="paginationControls"></div>
                         
                         <div class="text-end mt-3">
-                            <button id="exportBtn"class="btn btn-outline-dark">⬇ Export</button>
+                            <button id="exportBtn"class="btn btn-outline-light">⬇ Export</button>
                             <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
                         </div>
                     </div>
