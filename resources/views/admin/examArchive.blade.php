@@ -205,6 +205,62 @@
                                     </button>
                                 </td>
                             </tr>
+                            <tr>
+                               
+                               <td>Test ASDF</td>
+                               <td>Artemis</td>
+                               <td>Sales</td>
+                               <td>Data Privacy Exam</td>
+                               <td>7/10</td>
+                               <td>Passed</td>
+                               <td>
+                                   <button class="btn btn-sm" onclick="viewExam()">
+                                       <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                   </button>
+                               </td>
+                           </tr>
+                           <tr>
+                               
+                               <td>Test ASDF</td>
+                               <td>Artemis</td>
+                               <td>Sales</td>
+                               <td>Data Privacy Exam</td>
+                               <td>7/10</td>
+                               <td>Passed</td>
+                               <td>
+                                   <button class="btn btn-sm" onclick="viewExam()">
+                                       <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                   </button>
+                               </td>
+                           </tr>
+                           <tr>
+                               
+                               <td>Test ASDF</td>
+                               <td>Artemis</td>
+                               <td>Sales</td>
+                               <td>Data Privacy Exam</td>
+                               <td>7/10</td>
+                               <td>Passed</td>
+                               <td>
+                                   <button class="btn btn-sm" onclick="viewExam()">
+                                       <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                   </button>
+                               </td>
+                           </tr>
+                           <tr>
+                               
+                               <td>Test ASDF</td>
+                               <td>Artemis</td>
+                               <td>Sales</td>
+                               <td>Data Privacy Exam</td>
+                               <td>7/10</td>
+                               <td>Passed</td>
+                               <td>
+                                   <button class="btn btn-sm" onclick="viewExam()">
+                                       <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                   </button>
+                               </td>
+                           </tr>
                         </tbody>
                     </table>
                 </div>
