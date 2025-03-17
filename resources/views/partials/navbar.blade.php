@@ -1,6 +1,6 @@
 
     <div class="card p-4 shadow-lg rounded-4 w-100 d-flex flex-column justify-content-between"
-         style="background-color: #110C3D; min-height: 700px; max-height: 800px;">
+         style="background-color: #110C3D; min-height: 750px; max-height: 750px;">
        
         <nav class="nav flex-column">
             <a href="{{ route('admin.dashboard') }}" 

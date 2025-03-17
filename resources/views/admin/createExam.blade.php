@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-lg-10">
-            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0; max-height: 600px; min-height: 750px;">
+            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0; max-height: 750px; min-height: 750px;">
                 <div class="row">
                     
                     <div class="col-md-6">
@@ -43,7 +43,7 @@
 
                     
                     <div class="col-md-6">
-                        <div class="card p-3 shadow-lg rounded-4" style="background-color: #08354A; color: white; max-height: 600px; overflow-y: auto;">
+                        <div class="card p-3 shadow-lg rounded-4" style="background-color: #08354A; color: white; max-height: 750px; overflow-y: auto;">
                             <div id="questions-container">
                                 
                                 <div class="question-item mb-3">

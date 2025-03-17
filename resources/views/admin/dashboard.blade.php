@@ -20,10 +20,10 @@
         </div>
 
        
-        <div class="col-lg-7">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E;">
+        <div class="col-lg-7 d-flex flex-column gap-3" style="min-height: 750px; max-height: 750px;">
+            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height: 0;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
-                <div class="px-2" style="overflow-y: auto; max-height: 350px; min-height: 350px;">
+                <div class="px-2 flex-grow-1 overflow-auto">
                     <table class="table table-primary table-striped text-white">
                         <thead>
                             <tr>
@@ -101,9 +101,9 @@
                 </div>
             </div>
 
-            <div class="card p-3 shadow-lg rounded-4 mt-4" style="background-color: #327A8E;">
+            <div class="card p-3 shadow-lg rounded-4 mt-4" style="background-color: #327A8E; min-height: 0;">
                 <h4 class="fw-bold">Training History:</h4>
-                <div class="px-2" style="overflow-y: auto; max-height: 250px;">
+                <div class="px-2 flex-grow-1 overflow-auto">
                     <table class="table table-primary table-striped text-white">
                         <thead>
                             <tr>
@@ -188,7 +188,7 @@
 
         <!-- Additional Card (Blank) -->
         <div class="col-lg-3">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; height: 100%;">
+            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height:750px; max-height: 750px;>
                 <h4 class="fw-bold">Wala pa dito</h4>
             </div>
         </div>
