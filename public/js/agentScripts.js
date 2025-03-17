@@ -100,7 +100,7 @@ document.getElementById("exportBtn").addEventListener("click", function () {
     XLSX.writeFile(wb, "exam_results.xlsx");
 
 
-    
+
 });
 
 

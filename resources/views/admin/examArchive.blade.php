@@ -14,23 +14,226 @@
     </div>
 
     <div class="row">
-        <!-- Sidebar Navigation -->
+        
         <div class="col-lg-2 d-flex">
         @include('partials.navbar')
         </div>
 
-        <!-- Main Content -->
+       
         <div class="col-lg-10">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; max-height: 750px; min-height: 750px;">
-                <h4 class="fw-bold">Exam Archive</h4>
-                <div class="px-2 w-100">
+            <div class="card shadow-lg rounded-4 p-4" style="background-color: #327A8E; min-height:750px; max-height:750px;">
+                <h4 class="fw-bold">Agents</h4><p>List of agents taking the exam</p>
+
+                <div class="col-lg-7 d-flex gap-2 mb-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                    <select class="form-control">
+                        <option>Select Campaign</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Select Department</option>
+                    </select>
+                    <select class="form-control">
+                        <option>Select Exam Title</option>
+                    </select>
+                    <input type="date" id="dateFilter" class="form-control">
+                </div>
+
+                
+                <div class="table-responsive">
+                    <table id="agentsTable" class="table table-primary table-striped text-white">
+                    
+                        <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
+                            <tr class="fw-bold">
+                               
+                                <th>Exam Title ⬍</th>
+                                <th>Examiner ⬍</th>
+                                <th>Time Limit ⬍</th>
+                                <th>Times Taken⬍</th>
+                                <th>Failed Percentage</th>
+                                <th>Ratings AVG ⬍</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agentsTableBody">
+                            <tr>
+                              
+                                <td>Jane Cooper</td>
+                                <td>Kodak</td>
+                                <td>IT NOC</td>
+                                <td>Data Privacy Exam</td>
+                                <td>6/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                              
+                                <td>Floyd Miles</td>
+                                <td>Kodak</td>
+                                <td>IT NOC</td>
+                                <td>Data Privacy Exam</td>
+                                <td>9/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                           
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                            
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                            
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                           
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                          
+                                <td>Ronald Richards</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                             
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                             
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                                <td>Data Privacy Exam</td>
+                                <td>7/10</td>
+                                <td>Passed</td>
+                                <td>
+                                    <button class="btn btn-sm" onclick="viewExam()">
+                                        <img src="{{ asset('images/icn editBlack.png') }}" alt="edit" width="20" height="20">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+               
+               
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <p>Showing <span id="showingStart">1</span> to <span id="showingEnd">10</span> of <span id="totalEntries">1*</span> entries</p>
+                        
+                        <div id="paginationControls"></div>
+                        
+                        <div class="text-end mt-3">
+                            <button id="exportBtn"class="btn btn-outline-light">⬇ Export</button>
+                            <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give Exam</button>
+                        </div>
+                    </div>
+
                     
                 </div>
+
+                
+
             </div>
-
-            
-
-        
+        </div>
     </div>
 </div>
+
 @endsection
