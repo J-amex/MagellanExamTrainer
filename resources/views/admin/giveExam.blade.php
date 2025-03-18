@@ -6,7 +6,7 @@
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
-        <h2 class="fw-bold">Magellan Solutions Training</h2>
+        <h2 class="fw-bold">Magellan Solutions Short Training</h2>
         <form action="{{ route('logout') }}" method="POST">
             @csrf
             <button class="btn btn-outline-light">Logout</button>
@@ -22,7 +22,7 @@
        
         <div class="col-lg-10">
             <div class="card shadow-lg rounded-4 p-4" style="background-color: #327A8E; min-height:750px; max-height:750px;">
-                <h4 class="fw-bold">Agent List</h4><p>Give Exam to Agents</p>
+                <h4 class="fw-bold">Give Exam </h4><p>Give Exam to Agents</p>
 
                 <div class="col-lg-7 d-flex gap-2 mb-3">
                     <input type="text" id="searchInput" class="form-control" placeholder="Search">
@@ -147,9 +147,27 @@
                                 <td>Test ASDF</td>
                                 <td>Artemis</td>
                                 <td>Sales</td>
-                      
-                              
-                               
+                            
+                         
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowCheckbox"></td>
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                            
+                         
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowCheckbox"></td>
+                                <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                            
+                         
+                                
                             </tr>
                             <tr>
                                 <td><input type="checkbox" class="rowCheckbox"></td>
@@ -190,6 +208,15 @@
                             <tr>
                                 <td><input type="checkbox" class="rowCheckbox"></td>
                                 <td>Test ASDF</td>
+                                <td>Artemis</td>
+                                <td>Sales</td>
+                      
+                              
+                               
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="rowCheckbox"></td>
+                                <td>Test bbb</td>
                                 <td>Artemis</td>
                                 <td>Sales</td>
                       

@@ -8,7 +8,7 @@
     
     <div class="d-flex justify-content-between align-items-center mb-3">
     <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
-        <h2 class="fw-bold" style="color: white;">Magellan Solutions Training</h2>
+        <h2 class="fw-bold" style="color: white;">Magellan Solutions Short Training</h2>
 
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
