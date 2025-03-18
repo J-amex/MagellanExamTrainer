@@ -189,13 +189,14 @@
        
         <div class="col-lg-3">
             <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height:750px; max-height: 750px;">
-                <h4 class="fw-bold">Exam Results Overview</h4>
+                <h4 class="fw-bold">Training Results Overview</h4>
                 <div class="mb-3">
-                <label for="examSelect" class="form-label fw-bold">Select Exam Title:</label>
+                <label for="examSelect" class="form-label fw-bold">Select Training Title:</label>
                 <select id="examSelect" class="form-select w-auto form-select-sm">
-                    <option value="exam1">Data Privacy Exam</option>
-                    <option value="exam2">Cyber Security Exam</option>
-                    <option value="exam3">IT Compliance Test</option>
+                    <option value="exam1">Data Privacy Training</option>
+                    <option value="exam2">Cyber Security Training</option>
+                    <option value="exam3">BPE Compliance Test</option>
+                    <option value="exam4">Earthquake and Fire Safety</option>
                 </select>
             </div>
                         <canvas id="myPieChart"></canvas>
@@ -212,7 +213,8 @@
         const examData = {
             exam1: [45, 20, 10], 
             exam2: [30, 35, 5],  
-            exam3: [50, 10, 15]  
+            exam3: [50, 10, 15],
+            exam3: [30, 10, 15]   
         };
 
         let pieChart = new Chart(ctx, {

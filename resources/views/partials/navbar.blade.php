@@ -18,7 +18,7 @@
             <a href="{{ route('admin.agents') }}" 
             class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.agents') ? 'active-link' : '' }}">
                 <img src="{{ asset('images/icn agent.png') }}" alt="Agents" width="30" height="30" class="me-2">  
-                Agents
+                Monitor Training
             </a>
 
             <a href="{{ route('admin.examArchive') }}" 
