@@ -12,7 +12,7 @@
             <a href="{{ route('admin.createExam') }}" 
             class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.createExam') ? 'active-link' : '' }}">
                 <img src="{{ asset('images/icn createExam.png') }}" alt="Create Exam" width="30" height="30" class="me-2"> 
-                Create Exam
+                Create Training
             </a>
 
             <a href="{{ route('admin.agents') }}" 
@@ -24,13 +24,13 @@
             <a href="{{ route('admin.examArchive') }}" 
             class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.examArchive') ? 'active-link' : '' }}">
                 <img src="{{ asset('images/icn examArchive.png') }}" alt="Exam Archive" width="30" height="30" class="me-2">  
-                Exam Archive
+                Training Archive
             </a>
 
             <a href="{{ route('admin.giveExam') }}" 
             class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.giveExam') ? 'active-link' : '' }}">
                 <img src="{{ asset('images/icn giveExam.png') }}" alt="Give Exam" width="30" height="30" class="me-2">  
-                Give Exam
+                Give Training
             </a>
         </nav>
 

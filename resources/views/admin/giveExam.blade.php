@@ -237,7 +237,7 @@
                         
                         <div class="text-end mt-3">
                             <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Give to All</button>
-                            <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Start Exam</button>
+                            <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Start Training</button>
                         </div>
                     </div>
 
