@@ -192,7 +192,7 @@
                 <h4 class="fw-bold">Exam Results Overview</h4>
                 <div class="mb-3">
                 <label for="examSelect" class="form-label fw-bold">Select Exam Title:</label>
-                <select id="examSelect" class="form-select w-auto">
+                <select id="examSelect" class="form-select w-auto form-select-sm">
                     <option value="exam1">Data Privacy Exam</option>
                     <option value="exam2">Cyber Security Exam</option>
                     <option value="exam3">IT Compliance Test</option>
@@ -205,40 +205,43 @@
         </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const ctx = document.getElementById('myPieChart').getContext('2d');
-
-   
-    const examData = {
-        exam1: [45, 20, 10], 
-        exam2: [30, 35, 5],  
-        exam3: [50, 10, 15]  
-    };
-
-    let pieChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['Passed', 'Failed', 'Pending'],
-            datasets: [{
-                data: examData['exam1'], 
-                backgroundColor: ['#28a745', '#dc3545', '#ffc107']
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    labels: { color: 'white' }
-                }
-            }
-        }
-    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById('myPieChart').getContext('2d');
 
     
-    document.getElementById('examSelect').addEventListener('change', function () {
-        let selectedExam = this.value;
-        pieChart.data.datasets[0].data = examData[selectedExam]; 
-        pieChart.update();
+        const examData = {
+            exam1: [45, 20, 10], 
+            exam2: [30, 35, 5],  
+            exam3: [50, 10, 15]  
+        };
+
+        let pieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Passed', 'Failed', 'Pending'],
+                datasets: [{
+                    data: examData['exam1'], 
+                    backgroundColor: ['#28a745', '#dc3545', '#ffc107'],
+                    borderColor: '#000000', 
+                    borderWidth: 0.8 
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        labels: { color: 'white' }
+                    }
+                    
+                }
+            }
+        });
+
+        
+        document.getElementById('examSelect').addEventListener('change', function () {
+            let selectedExam = this.value;
+            pieChart.data.datasets[0].data = examData[selectedExam]; 
+            pieChart.update();
+        });
     });
-});
 </script>
 @endsection
