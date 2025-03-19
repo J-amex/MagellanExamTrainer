@@ -22,7 +22,7 @@
        
         <div class="col-lg-10">
             <div class="card shadow-lg rounded-4 p-4" style="background-color: #327A8E; min-height:750px; max-height:750px;">
-                <h4 class="fw-bold">Give Exam </h4><p>Give Exam to Agents</p>
+                <h4 class="fw-bold">Start Training </h4><p>Select Agents and Start Training</p>
 
                 <div class="col-lg-7 d-flex gap-2 mb-3">
                     <input type="text" id="searchInput" class="form-control" placeholder="Search">
