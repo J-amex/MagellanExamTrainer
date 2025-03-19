@@ -62,7 +62,7 @@
                                 <td>IT NOC</td>
                                 <td>Data Privacy Exam</td>
                                 <td>6/10</td>
-                                <td>Passed</td>
+                                <td>Stage 1 (Viewing Material)</td>
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
@@ -72,7 +72,7 @@
                                 <td>IT NOC</td>
                                 <td>Data Privacy Exam</td>
                                 <td>9/10</td>
-                                <td>Passed</td>
+                                <td>Stage 2 (Exam)</td>
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
@@ -82,7 +82,7 @@
                                 <td>BPE Compliance</td>
                                 <td>Data Privacy Exam</td>
                                 <td>7/10</td>
-                                <td>Passed</td>
+                                <td>Stage 3 (Survey)</td>
                                 <td><button class="btn btn-sm" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
