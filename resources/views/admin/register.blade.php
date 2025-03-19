@@ -25,7 +25,7 @@
                 <h4 class="fw-bold">Register Employees</h4>
                 <p>Reguster Employees for Short Training Manually</p>
 
-                <div class="container mt-4">
+                <div class="container mt-1">
     <div class="card shadow-lg rounded-4 p-3 text-black" style="background-color: #B8D8E0;">
         <h4 class="fw-bold">Register Employee</h4>
         <p>Fill in the details to register a new employee.</p>
