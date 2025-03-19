@@ -36,6 +36,11 @@
 
 
         <div class="mt-auto">
+        <a href="{{ route('admin.register') }}" 
+            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.register') ? 'active-link' : '' }}">
+                    <img src="{{ asset('images/icn group.png') }}" alt="Settings" width="30" height="30" class="me-2">
+                    Register
+            </a>
             <a href="{{ route('admin.settings') }}" 
             class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.settings') ? 'active-link' : '' }}">
                     <img src="{{ asset('images/icn settings.png') }}" alt="Settings" width="30" height="30" class="me-2">

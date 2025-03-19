@@ -51,6 +51,10 @@ Route::get('/admin/giveExam', function () {
     return view('admin.giveExam');
 })->name('admin.giveExam');
 
+Route::get('/admin/register', function () {
+    return view('admin.register');
+})->name('admin.register');
+
 Route::get('/admin/settings', function () {
     return view('admin.settings');
 })->name('admin.settings');

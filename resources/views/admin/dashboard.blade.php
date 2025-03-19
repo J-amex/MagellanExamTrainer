@@ -214,7 +214,7 @@
             exam1: [45, 20, 10], 
             exam2: [30, 35, 5],  
             exam3: [50, 10, 15],
-            exam3: [30, 10, 15]   
+            exam4: [30, 10, 15]   
         };
 
         let pieChart = new Chart(ctx, {
