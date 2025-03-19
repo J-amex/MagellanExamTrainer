@@ -45,6 +45,7 @@
                         <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr class="fw-bold">
                                 
+                                <th>Employee Code ⬍</th>
                                 <th>Agent Name ⬍</th>
                                 <th>Campaign ⬍</th>
                                 <th>Department ⬍</th>
@@ -57,6 +58,7 @@
                         </thead>
                         <tbody id="agentsTableBody">
                             <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -77,66 +79,7 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
-                                <td>Wooooo Wooooo</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
-                                <td>QA</td>
-                                <td>
-                                    <select class="form-select form-select-sm" style="width: 120px;">
-                                        <option value="">Admin</option>
-                                        <option value="6/10">Employee</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select class="form-select form-select-sm" style="width: 120px;">
-                                        <option value="">Active</option>
-                                        <option value="6/10">Inactive</option>
-                                    </select>
-                                </td>
-                                <td>9.7</td>
-                                <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
-                            </tr>
-                            <tr>
-                                <td>Weeeeee Wiiiiii</td>
-                                <td>Kodak</td>
-                                <td>BPE Compliance</td>
-                                <td>QA</td>
-                                <td>
-                                    <select class="form-select form-select-sm" style="width: 120px;">
-                                        <option value="">Admin</option>
-                                        <option value="6/10">Employee</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select class="form-select form-select-sm" style="width: 120px;">
-                                        <option value="">Active</option>
-                                        <option value="6/10">Inactive</option>
-                                    </select>
-                                </td>
-                                <td>9.7</td>
-                                <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
-                            </tr>
-                            <tr>
-                                <td>HHHHH HHHHHHHHH</td>            
-                                <td>ASDF camp</td>
-                                <td>ZXCV dep</td>
-                                <td>zzzzzzzz pos</td>
-                                <td>
-                                    <select class="form-select form-select-sm" style="width: 120px;">
-                                        <option value="">Admin</option>
-                                        <option value="6/10">Employee</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select class="form-select form-select-sm" style="width: 120px;">
-                                        <option value="">Active</option>
-                                        <option value="6/10">Inactive</option>
-                                    </select>
-                                </td>
-                                <td>9.7</td>
-                                <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
-                            </tr>
-                            <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -157,6 +100,7 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -177,6 +121,31 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
+                                <td>Aron James Aguirre</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>QA</td>
+                                <td>
+                                    <select class="form-select form-select-sm" style="width: 120px;">
+                                        <option value="">Admin</option>
+                                        <option value="6/10">Employee</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select form-select-sm" style="width: 120px;">
+                                        <option value="">Active</option>
+                                        <option value="6/10">Inactive</option>
+                                    </select>
+                                </td>
+                                <td>9.7</td>
+                                <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -197,6 +166,7 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -217,6 +187,7 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -237,6 +208,7 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -257,6 +229,7 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
@@ -277,6 +250,50 @@
                                 <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
                             </tr>
                             <tr>
+                                <td>9201</td>
+                                <td>Aron James Aguirre</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>QA</td>
+                                <td>
+                                    <select class="form-select form-select-sm" style="width: 120px;">
+                                        <option value="">Admin</option>
+                                        <option value="6/10">Employee</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select form-select-sm" style="width: 120px;">
+                                        <option value="">Active</option>
+                                        <option value="6/10">Inactive</option>
+                                    </select>
+                                </td>
+                                <td>9.7</td>
+                                <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
+                            </tr>
+                            <tr>
+                                <td>9201</td>
+                                <td>Aron James Aguirre</td>
+                                <td>Kodak</td>
+                                <td>BPE Compliance</td>
+                                <td>QA</td>
+                                <td>
+                                    <select class="form-select form-select-sm" style="width: 120px;">
+                                        <option value="">Admin</option>
+                                        <option value="6/10">Employee</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select form-select-sm" style="width: 120px;">
+                                        <option value="">Active</option>
+                                        <option value="6/10">Inactive</option>
+                                    </select>
+                                </td>
+                                <td>9.7</td>
+                                <td><button class="btn" onclick="viewExam()"> 👁 </button></td>
+                            </tr>
+
+                            <tr>
+                                <td>9201</td>
                                 <td>Aron James Aguirre</td>
                                 <td>Kodak</td>
                                 <td>BPE Compliance</td>
