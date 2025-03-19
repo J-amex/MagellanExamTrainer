@@ -22,33 +22,71 @@
        
         <div class="col-lg-10">
             <div class="card shadow-lg rounded-4 p-4" style="background-color: #327A8E; min-height:750px; max-height:750px;">
-                <h4 class="fw-bold">Agent Settings</h4><p>Configure Agents</p>
+                <h4 class="fw-bold">Register Employees</h4>
+                <p>Reguster Employees for Short Training Manually</p>
 
-                <div class="col-lg-4 d-flex gap-2 mb-3">
-                    <label>Agent Code:</label>
-                    <input type="text" id="searchInput" class="form-control" placeholder="Search">
-                  
+                <div class="container mt-4">
+    <div class="card shadow-lg rounded-4 p-3 text-black" style="background-color: #B8D8E0;">
+        <h4 class="fw-bold">Register Employee</h4>
+        <p>Fill in the details to register a new employee.</p>
+        <form>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Employee Code</label>
+                    <input type="text" class="form-control" placeholder="Enter Employee Code">
                 </div>
+                <div class="col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Last Name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="Enter First Name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Middle Name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Campaign</label>
+                    <input type="text" class="form-control" placeholder="Enter Campaign">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Department</label>
+                    <input type="text" class="form-control" placeholder="Enter Department">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Position</label>
+                    <input type="text" class="form-control" placeholder="Enter Position">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">User Type</label>
+                    <select class="form-select">
+                        <option value="Admin">Admin</option>
+                        <option value="Employee">Employee</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Activity Status</label>
+                    <select class="form-select">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-4">
+                <button type="submit" class="btn btn-primary" style="background-color: #7C1414">Register</button>
+                <input type="file" id="excelFile" accept=".xls,.xlsx" class="form-control mb-3" hidden>
+                <button id="uploadBtn" class="btn btn-primary" style="background-color: #7C1414">Batch Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 
                 
                
-                </div>
-
                
-               
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <p>Showing <span id="showingStart">1</span> to <span id="showingEnd">10</span> of <span id="totalEntries">1*</span> entries</p>
-                        
-                        <div id="paginationControls"></div>
-                        
-                        <div class="text-end mt-3">
-                            
-                            <button class="btn fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Save Changes</button>
-                        </div>
-                    </div>
-
-                    
-                </div>
 
                 
 
@@ -56,5 +94,9 @@
         </div>
     </div>
 </div>
-
+<script>
+    document.getElementById("uploadBtn").addEventListener("click", function() {
+        document.getElementById("excelFile").click();
+    });
+</script>
 @endsection
