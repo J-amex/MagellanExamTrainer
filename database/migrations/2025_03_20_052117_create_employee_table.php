@@ -13,6 +13,12 @@ return new class extends Migration {
             $table->string('password');
             $table->string('last_name');
             $table->string('first_name');
+            $table->string('campaign');
+            $table->string('department');
+            $table->string('position');
+            $table->string('user_type');
+            $table->string('activity_status');
+            $table->string('avg');
             $table->timestamps();
         });
     }
