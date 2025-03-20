@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('exams_table', function (Blueprint $table) {
             $table->id('exam_id'); 
             $table->string('exam_title')->unique();
-            $table->string('date');
-            $table->string('time_limit');
+            $table->date('date');
+            $table->time('time_limit');
             $table->string('file_path');
-            $table->string('question');
+            $table->text('question');
             $table->timestamps();
         });
     }
