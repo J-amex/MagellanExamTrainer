@@ -36,16 +36,8 @@
                     <input type="text" class="form-control" placeholder="Enter Employee Code">
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Last Name</label>
+                    <label class="form-label">Employee Name</label>
                     <input type="text" class="form-control" placeholder="Enter Last Name">
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">First Name</label>
-                    <input type="text" class="form-control" placeholder="Enter First Name">
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Middle Name</label>
-                    <input type="text" class="form-control" placeholder="Enter Middle Name">
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Campaign</label>

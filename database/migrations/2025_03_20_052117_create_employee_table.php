@@ -11,8 +11,7 @@ return new class extends Migration {
             $table->id('emp_id'); 
             $table->string('emp_code')->unique();
             $table->string('password');
-            $table->string('last_name');
-            $table->string('first_name');
+            $table->string('employee_name');
             $table->string('campaign');
             $table->string('department');
             $table->string('position');
