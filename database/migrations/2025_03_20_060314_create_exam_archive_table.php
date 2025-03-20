@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('exam_archive', function (Blueprint $table) {
+        Schema::create('exam_archive_table', function (Blueprint $table) {
             $table->id('exam_id')->unique();; 
             $table->string('exam_title');
             $table->string('examiner');
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('exam_archive');
+        Schema::dropIfExists('exam_archive_table');
     }
 };
