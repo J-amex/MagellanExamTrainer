@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('exam_archive_table', function (Blueprint $table) {
-            $table->id('exam_id')->unique();; 
+            $table->id('exam_archive_id')->unique();; 
             $table->string('exam_title');
             $table->string('examiner');
             $table->string('time_limit');
