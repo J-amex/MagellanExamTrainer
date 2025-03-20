@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->string('position');
             $table->string('user_type');
             $table->string('activity_status');
-            $table->string('avg');
+            $table->decimal('avg', 5, 2);
             $table->timestamps();
         });
     }
