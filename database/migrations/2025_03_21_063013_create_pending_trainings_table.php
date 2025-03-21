@@ -13,13 +13,12 @@ return new class extends Migration
     {
         Schema::create('pending_trainings_table', function (Blueprint $table) {
             $table->id('pending_id')->unique();; 
-            $table->string('exam_title');
+            $table->string('date');
+            $table->string('time_given');
+            $table->string('training_title');
             $table->string('examiner');
             $table->string('time_limit');
-            $table->string('times_taken');
-            $table->string('failed_percentage');
-            $table->decimal('ratings_avg',5,2);
-            $table->string('survey_results');
+            $table->decimal('status',5,2);
             $table->timestamps();
         });
     }

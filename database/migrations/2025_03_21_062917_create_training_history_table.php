@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('training_history_table', function (Blueprint $table) {
             $table->id('training_id')->unique();; 
             $table->date('date');
-            $table->time('time_given');
+            $table->time('time_finished');
             $table->string('training_title');
             $table->string('examiner');
             $table->time('time_limit');

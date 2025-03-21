@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex align-items-center justify-content-between mb-3">
         <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
         <h2 class="fw-bold">Magellan Solutions Short Training</h2>
         <form action="{{ route('logout') }}" method="POST">
@@ -21,18 +21,18 @@
 
        
         <div class="col-lg-7 d-flex flex-column gap-3" style="min-height: 750px; max-height: 750px;">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height: 0;">
+            <div class="card p-3 rounded-4 shadow-lg" style="background-color: #327A8E; min-height: 0;">
                 <h4 class="fw-bold">Pending Trainings:</h4>
-                <div class="px-2 flex-grow-1 overflow-auto">
+                <div class="flex-grow-1 overflow-auto px-2">
                     <table class="table table-primary table-striped text-white">
                         <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr>
                                 <th>Date</th>
                                 <th>Time Given</th>
-                                <th>Training Category</th>
+                                <th>Training Title</th>
                                 <th>Examiner</th>
                                 <th>Time Limit</th>
-                                <th>Scores</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -101,15 +101,15 @@
                 </div>
             </div>
 
-            <div class="card p-3 shadow-lg rounded-4 mt-4" style="background-color: #327A8E; min-height: 0;">
+            <div class="card p-3 rounded-4 shadow-lg mt-4" style="background-color: #327A8E; min-height: 0;">
                 <h4 class="fw-bold">Training History:</h4>
-                <div class="px-2 flex-grow-1 overflow-auto">
+                <div class="flex-grow-1 overflow-auto px-2">
                     <table class="table table-primary table-striped text-white">
                         <thead style="position: sticky; top: 0; z-index: 2;" class="table-dark">
                             <tr>
                                 <th>Date</th>
                                 <th>Time Finished</th>
-                                <th>Exam Title</th>
+                                <th>Training Title</th>
                                 <th>Examiner</th>
                                 <th>Total Time</th>
                                 <th>Score</th>
@@ -188,11 +188,11 @@
 
        
         <div class="col-lg-3">
-            <div class="card p-3 shadow-lg rounded-4" style="background-color: #327A8E; min-height:750px; max-height: 750px;">
+            <div class="card p-3 rounded-4 shadow-lg" style="background-color: #327A8E; min-height:750px; max-height: 750px;">
                 <h4 class="fw-bold">Training Results Overview</h4>
                 <div class="mb-3">
                 <label for="examSelect" class="form-label fw-bold">Select Training Title:</label>
-                <select id="examSelect" class="form-select w-auto form-select-sm">
+                <select id="examSelect" class="form-select form-select-sm w-auto">
                     <option value="exam1">Data Privacy Training</option>
                     <option value="exam2">Cyber Security Training</option>
                     <option value="exam3">BPE Compliance Test</option>
