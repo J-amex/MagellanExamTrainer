@@ -11,8 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('training_history', function (Blueprint $table) {
-            $table->id();
+        Schema::create('training_history_table', function (Blueprint $table) {
+            $table->id('training_id')->unique();; 
+            $table->date('date');
+            $table->time('time_given');
+            $table->string('training_title');
+            $table->string('examiner');
+            $table->time('time_limit');
+            $table->string('score');
             $table->timestamps();
         });
     }
