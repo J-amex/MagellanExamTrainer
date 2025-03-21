@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('times_taken');
             $table->string('failed_percentage');
             $table->decimal('ratings_avg',5,2);
-            $table->string('survery_results');
+            $table->string('survey_results');
             $table->timestamps();
         });
     }
@@ -32,3 +32,4 @@ return new class extends Migration
         Schema::dropIfExists('exam_archive_table');
     }
 };
+ 
