@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('time_limit');
             $table->string('times_taken');
             $table->string('failed_percentage');
-            $table->string('ratings_avg');
+            $table->decimal('ratings_avg',5,2);
             $table->string('survery_results');
             $table->timestamps();
         });
