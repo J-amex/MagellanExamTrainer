@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex align-items-center justify-content-between mb-3">
         <img src="{{ asset('images/magellan logo.png') }}" alt="Magellan Solutions Logo" class="img-fluid" style="max-width: 70px;">
         <h2 class="fw-bold">Magellan Solutions Short Training</h2>
         <form action="{{ route('logout') }}" method="POST">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-lg-10">
-            <div class="card shadow-lg rounded-4 p-4" style="background-color: #B8D8E0; max-height: 750px; min-height: 750px;">
+            <div class="card p-4 rounded-4 shadow-lg" style="background-color: #B8D8E0; max-height: 750px; min-height: 750px;">
                 <div class="row">
                     
                     <div class="col-md-6">
@@ -43,10 +43,10 @@
 
                     
                     <div class="col-md-6">
-                        <div class="card p-3 shadow-lg rounded-4" style="background-color: #08354A; color: white; max-height: 750px; overflow-y: auto;">
+                        <div class="card p-3 rounded-4 shadow-lg" style="background-color: #08354A; color: white; max-height: 750px; overflow-y: auto;">
                             <div id="questions-container">
                                 
-                                <div class="question-item mb-3">
+                                <div class="mb-3 question-item">
                                     <h5 class="fw-bold">Question 1:</h5>
                                     <textarea class="form-control mb-2" placeholder="Type question here.."></textarea>
 
@@ -77,7 +77,7 @@
 
                 
                 <div class="text-end mt-3">
-                    <button class="btn btn-lg fw-bold text-white" style="background-color: #7C1414; border-radius: 10px;">Create Exam</button>
+                    <button class="btn btn-lg text-white fw-bold" style="background-color: #7C1414; border-radius: 10px;">Create Exam</button>
                 </div>
             </div>
         </div>
