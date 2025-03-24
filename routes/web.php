@@ -39,9 +39,10 @@ Route::get('/admin/createTraining', function () {
     return view('admin.createTraining');
 })->name('admin.createTraining');
 
-Route::get('/admin/agents', function () {
-    return view('admin.agents');
-})->name('admin.agents');
+//renamed from agents to monitorTraining
+Route::get('/admin/monitorTraining', function () {
+    return view('admin.monitorTraining');
+})->name('admin.monitorTraining');
 
 Route::get('/admin/examArchive', function () {
     return view('admin.examArchive');
