@@ -223,9 +223,9 @@
                 labels: ['Passed', 'Failed', 'Pending'],
                 datasets: [{
                     data: examData['exam1'], 
-                    backgroundColor: ['#28a745', '#dc3545', '#ffc107'],
+                    backgroundColor: ['#07a309', '#740407', '#FFCA2C'],
                     borderColor: '#000000', 
-                    borderWidth: 0.8 
+                    borderWidth: 1
                 }]
             },
             options: {
