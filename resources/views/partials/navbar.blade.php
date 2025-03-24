@@ -31,8 +31,8 @@
             </a>
 
             <!-- renamed from giveExam to startTraining -->
-            <a href="{{ route('admin.giveExam') }}" 
-            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.giveExam') ? 'active-link' : '' }}">
+            <a href="{{ route('admin.startTraining') }}" 
+            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.startTraining') ? 'active-link' : '' }}">
                 <img src="{{ asset('images/icn giveExam.png') }}" alt="Give Exam" width="30" height="30" class="me-2">  
                 Start Training
             </a>

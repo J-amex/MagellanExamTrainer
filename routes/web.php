@@ -49,9 +49,10 @@ Route::get('/admin/trainingArchive', function () {
     return view('admin.trainingArchive');
 })->name('admin.trainingArchive');
 
-Route::get('/admin/giveExam', function () {
-    return view('admin.giveExam');
-})->name('admin.giveExam');
+//renamed from giveExam to startTraining
+Route::get('/admin/startTraining', function () {
+    return view('admin.startTraining');
+})->name('admin.startTraining');
 
 Route::get('/admin/register', function () {
     return view('admin.register');
@@ -60,6 +61,7 @@ Route::get('/admin/register', function () {
 Route::get('/admin/settings', function () {
     return view('admin.settings');
 })->name('admin.settings');
+
 
 //employee routes
 Route::get('/employee/dashboard', function () {
