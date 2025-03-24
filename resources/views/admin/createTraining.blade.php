@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Admin Create Exam')
+@section('title', 'Create Training')
 
 @section('content')
 <div class="container-fluid p-3" style="background-color: rgba(0, 47, 75, 0); min-height: 100vh; color: white;">

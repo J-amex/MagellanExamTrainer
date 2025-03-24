@@ -35,9 +35,9 @@ Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
 
-Route::get('/admin/createExam', function () {
-    return view('admin.createExam');
-})->name('admin.createExam');
+Route::get('/admin/createTraining', function () {
+    return view('admin.createTraining');
+})->name('admin.createTraining');
 
 Route::get('/admin/agents', function () {
     return view('admin.agents');

@@ -9,9 +9,9 @@
                 Dashboard
             </a>
 
-            <a href="{{ route('admin.createExam') }}" 
-            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.createExam') ? 'active-link' : '' }}">
-                <img src="{{ asset('images/icn createExam.png') }}" alt="Create Exam" width="30" height="30" class="me-2"> 
+            <a href="{{ route('admin.createTraining') }}" 
+            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.createTraining') ? 'active-link' : '' }}">
+                <img src="{{ asset('images/icn createExam.png') }}" alt="Dashboard" width="30" height="30" class="me-2">    
                 Create Training
             </a>
 
