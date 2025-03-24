@@ -44,9 +44,10 @@ Route::get('/admin/monitorTraining', function () {
     return view('admin.monitorTraining');
 })->name('admin.monitorTraining');
 
-Route::get('/admin/examArchive', function () {
-    return view('admin.examArchive');
-})->name('admin.examArchive');
+//renamed from examArchive to trainingArchive
+Route::get('/admin/trainingArchive', function () {
+    return view('admin.trainingArchive');
+})->name('admin.trainingArchive');
 
 Route::get('/admin/giveExam', function () {
     return view('admin.giveExam');

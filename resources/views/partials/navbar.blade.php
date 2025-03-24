@@ -24,8 +24,8 @@
             </a>
 
             <!-- renamed from examArchive to trainingArchive -->
-            <a href="{{ route('admin.examArchive') }}" 
-            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.examArchive') ? 'active-link' : '' }}">
+            <a href="{{ route('admin.trainingArchive') }}" 
+            class="nav-link text-white fw-bold p-3 {{ request()->routeIs('admin.trainingArchive') ? 'active-link' : '' }}">
                 <img src="{{ asset('images/icn examArchive.png') }}" alt="Exam Archive" width="30" height="30" class="me-2">  
                 Training Archive
             </a>
